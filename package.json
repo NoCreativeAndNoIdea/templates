@@ -1,0 +1,45 @@
+{
+  "name": "template",
+  "version": "0.0.1",
+  "description": "a basic library template",
+  "author": "season <997432833lixuan@gmail.com> (https://github.com/muziyan)",
+  "license": "MIT",
+  "keywords": [
+    "template"
+  ],
+  "types": "./dist/index.d.ts",
+  "main": "./dist/lib.umd.js",
+  "module": "./dist/lib.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/lib.es.js",
+      "require": "./dist/lib.umd.js"
+    }
+  },
+  "files": [
+    "dist/*",
+    "README.md"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@jiqi/eslint-config-prettier": "^0.0.1",
+    "@jiqi/eslint-config-ts": "^0.0.1",
+    "@types/node": "^18.11.8",
+    "@vitest/ui": "^0.24.4",
+    "eslint": "^8.26.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4",
+    "vite": "^3.2.2",
+    "vite-plugin-dts": "^1.6.6",
+    "vitest": "^0.24.4"
+  }
+}

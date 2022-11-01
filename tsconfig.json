@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "preserveSymlinks": true,
+    "allowUmdGlobalAccess": true,
+    "moduleResolution": "node",
+    "typeRoots": [
+      "vite/client"
+    ],
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}

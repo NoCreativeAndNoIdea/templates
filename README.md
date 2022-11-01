@@ -1,1 +1,2 @@
-# templates  
+# Basic library template
+
