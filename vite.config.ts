@@ -20,7 +20,13 @@ export default mergeConfig(
       },
       rollupOptions: {},
     },
-    plugins: [dts({cleanVueFileName: true, insertTypesEntry: true})],
+    plugins: [
+      dts({
+        outputDir: 'types',
+        cleanVueFileName: true,
+        insertTypesEntry: true,
+      }),
+    ],
   }),
   vitestConfig,
 )
