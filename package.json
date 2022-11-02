@@ -11,13 +11,15 @@
     "dev": "vite build --watch",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
   },
   "devDependencies": {
     "@jiqi/eslint-config-prettier": "^0.0.1",
     "@jiqi/eslint-config-ts": "^0.0.1",
     "@types/node": "^18.11.8",
     "@vitest/ui": "^0.24.4",
+    "bumpp": "^8.2.1",
     "dts-bundle-generator": "^7.0.0",
     "esbuild": "^0.15.12",
     "esbuild-register": "^3.3.3",
