@@ -8,6 +8,6 @@ export default [
   {
     name: 'shared',
     entry: 'src/index.ts',
-    formats: ['es', 'cjs', 'iife'],
+    formats: ['es', 'umd', 'iife'],
   },
 ] as MetadataItem[]

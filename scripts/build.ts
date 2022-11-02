@@ -9,9 +9,10 @@ const outputDir = (name: string) =>
   resolve(__dirname, `../packages/${name}/dist`)
 
 const fileName: Record<string, string> = {
-  es: `index.mjs`,
-  cjs: `index.cjs`,
+  es: `index.es.js`,
+  umd: 'index.umd.js',
   iife: `index.iife.js`,
+  cjs: 'index.cjs',
 }
 
 async function buildAll() {
