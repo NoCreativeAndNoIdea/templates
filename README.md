@@ -1,2 +1,2 @@
-# Basic library template
+# React components template
 
